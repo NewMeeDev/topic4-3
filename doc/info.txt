@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=RAp0vYrz6OA&list=PLhPyEFL5u-i0MHw41OapxjLlsl0s2XQyE
+
+Connect MySql with a Repository

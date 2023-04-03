@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package com.mneumann1.service;
+
+import java.util.List;
+
+import com.mneumann1.model.OrderModel;
+
+/**
+ * @author MNEUMANN1
+ *
+ */
+public interface OrderBusinesServiceInterface {
+	
+	public void test();
+	
+	public void init();
+	
+	public void destroy();
+	
+	public OrderModel getById(long id);
+	
+	public List<OrderModel> getOrders();
+	
+	public List<OrderModel> searchOrders(String searchTerm);
+	
+	public long addOne(OrderModel newOrder);
+	
+	public boolean deleteOne(long id);
+	
+	public OrderModel updateOne(long idToUpdate, OrderModel updateOrder);
+
+}

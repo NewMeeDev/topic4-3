@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "9d27faed-460d-44b7-83ec-ab412b004098",
+		"name": "Prof. Sluiter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderNo\": \"011\",\r\n    \"productName\": \"Sky diving experience Twice\",\r\n    \"price\": 1750.0,\r\n    \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/orders/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/orders/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/orders/delete/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"orderNo\": \"000fgrtgtg\",\r\n    \"productName\": \"Updated\",\r\n    \"price\": 1550.0,\r\n    \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/orders/update/0",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						"update",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
