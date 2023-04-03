@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html layout:decorate="~{layouts/defaultLayout}">
+<html layout:decorate="~{layouts/defaultLayout}" xmlns:th="http://www.thymeleaf.org">
 
 <!--  
 1. Insert title
@@ -7,7 +7,7 @@
 3. Add to defaultLayout
 -->
 
-  <div layout:fragment="content">
+  <div layout:fragment="content" class="container mt-3 mb-3">
 	<h2 th:text="${title}"></h2>
 	<table class="table table-striped">
 	  <thead>
